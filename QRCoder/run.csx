@@ -11,7 +11,7 @@ using QRCoder;
  
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
 {
-    // Read the json request
+    // Read the json request.
     var qrRequest = await req.Content.ReadAsAsync<SimpleVCardRequest>();
  
     // Create the vCard string
